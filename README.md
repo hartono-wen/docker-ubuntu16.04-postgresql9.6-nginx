@@ -19,13 +19,18 @@ sudo docker run -it -p 23001:5432 -p 23002:80 -p 23003:443 docker-ubuntu16.04-po
 ```
 ## Additional Information
 
-PostgreSQL credential information:
-
+### PostgreSQL credential information:
+```
 Username: sa
 
 Password: 123
+```
 
-Exposed Port:
+### Exposed Port:
 1. 5432, for PostgreSQL
 2. 80, for Nginx
 3. 443, for Nginx
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
