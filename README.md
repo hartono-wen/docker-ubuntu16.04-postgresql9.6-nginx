@@ -4,23 +4,25 @@
 
 This is a repository containing Dockerfile to create a Docker image consisting of:
 1. Base Image: Ubuntu 16.04
-2. Web Server: Nginx 1.10.3
-3. Database: PostgreSQL 9.6
+2. Database: PostgreSQL 9.6
+3. Web Server: Nginx 1.10.3
 
 ## Commands
 
 ### 1. Command to build the Docker image
-
+```
 sudo docker build -t docker-ubuntu16.04-postgresql9.6-nginx:1.0 .
-
+```
 ### 2. Command to run the Docker image
-
+```
 sudo docker run -it -p 23001:5432 -p 23002:80 -p 23003:443 docker-ubuntu16.04-postgresql9.6-nginx:1.0
-
+```
 ## Additional Information
 
 PostgreSQL credential information:
+
 Username: sa
+
 Password: 123
 
 Exposed Port:
